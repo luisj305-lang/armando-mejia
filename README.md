@@ -1,6 +1,6 @@
-# Armando Mejía — sitio del artista
+# Armando Mejías — sitio del artista
 
-Sitio web personal del pintor Armando Mejía. Página estática, sin dependencias ni build: se abre
+Sitio web personal del pintor Armando Mejías. Página estática, sin dependencias ni build: se abre
 directamente `index.html` o se publica tal cual en GitHub Pages.
 
 ## Estructura
@@ -22,7 +22,7 @@ obra/           46 imágenes de obra, JPEG, lado mayor 1100 px
 | Devoción | 2 |
 | Abstractos | 5 |
 
-Además: Exposiciones, Estudio, Bio y Contacto.
+Además: Exposiciones, Prensa, Bio y Contacto.
 
 ## Publicar en GitHub Pages
 
@@ -33,9 +33,10 @@ El sitio queda disponible en `https://<usuario>.github.io/<repo>/` en un par de 
 
 Todos los textos están directamente en `index.html`, en español y sin plantillas de por medio.
 
-- **Fichas de obra** — busque `<figcaption>`. El formato es
-  `"Título" - medidas - técnica - año`.
-- **Bio, Estudio, Contacto y Exposiciones** — son secciones `<section class="page" id="...">`
+- **Fichas de obra** — ahora mismo las obras no llevan ficha. Cuando el artista facilite
+  títulos, medidas y años, se añade un `<figcaption>` dentro de cada `<figure class="cell">`
+  con el formato `"Título" - medidas - técnica - año`.
+- **Bio, Prensa, Contacto y Exposiciones** — son secciones `<section class="page" id="...">`
   al final del archivo. Se editan como texto normal.
 - **Portada** — los `div.slide` al principio toman su imagen de la galería mediante el atributo
   `data-from="wN"`, donde `N` es el número del archivo en `obra/`. Cambiando ese número se cambia
@@ -44,14 +45,19 @@ Todos los textos están directamente en `index.html`, en español y sin plantill
   existente, ajustando `flex-grow`, `flex-basis` y el `padding-bottom` del `span.ratio` a la
   proporción de la nueva imagen.
 
-## Pendiente de confirmar
+## Estado de los datos
 
-Los siguientes datos son provisionales y deben reemplazarse por los reales:
+**Confirmado por el artista:** nombre, fecha y lugar de nacimiento (Camagüey, Cuba, 9 de agosto
+de 1963), formación en la Escuela de Arte San Alejandro, residencia y carrera en Miami, ciudades
+donde ha expuesto, técnica (óleo y acrílico sobre lienzo, cartulina y board) y teléfono.
 
-- Año y lugar de nacimiento, y trayectoria de formación (sección **Bio**)
-- Títulos, medidas y años de las 46 obras
-- Listado de exposiciones
-- Correo, teléfono y galerías de representación (sección **Contacto**)
+**Pendiente:**
+
+- Títulos, medidas y año de cada una de las 46 obras
+- Nombres, sedes y fechas concretas de las exposiciones
+- Publicaciones, fechas y autores de los recortes de prensa
+- Correo electrónico y redes sociales
+- Fotografías de la obra a mayor resolución — las actuales son capturas de pantalla
 
 ## Tipografía
 
